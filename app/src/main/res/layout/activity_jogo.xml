@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogoActivity">
+
+    <ImageView
+        android:id="@+id/ivJogador1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivNick"
+        app:srcCompat="@drawable/charmander" />
+
+    <ImageView
+        android:id="@+id/ivJogador2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/bulbasaur" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivJogador2"
+        app:layout_constraintStart_toEndOf="@+id/ivJogador1"
+        tools:layout_editor_absoluteY="119dp"
+        tools:text="VS" />
+
+    <ImageView
+        android:id="@+id/ivPlanta"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/op_bulbassaur" />
+
+    <ImageView
+        android:id="@+id/ivFogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivAgua"
+        app:layout_constraintStart_toEndOf="@+id/ivPlanta"
+        app:layout_constraintTop_toTopOf="@+id/ivPlanta"
+        app:srcCompat="@drawable/op_charmander" />
+
+    <ImageView
+        android:id="@+id/ivAgua"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivFogo"
+        app:srcCompat="@drawable/op_squirtle" />
+
+    <TextView
+        android:id="@+id/ivNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_contentz"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Jogador 1 "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_contentz"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="CPU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivNick"
+        app:layout_constraintTop_toTopOf="@+id/ivNick" />
+
+    <TextView
+        android:id="@+id/ivResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ivFogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivJogador1" />
+</android.support.constraint.ConstraintLayout>
